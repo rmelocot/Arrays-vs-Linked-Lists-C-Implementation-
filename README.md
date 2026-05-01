@@ -34,7 +34,7 @@ A1/ <br>
 
 ## Installation & Usage
 ### 1. Clone the repository
-git clone ...<br>
+git clone https://github.com/rmelocot/Arrays-vs-Linked-Lists-C-Implementation-.git<br>
 cd A1
 ### 2. Build the project
 make
