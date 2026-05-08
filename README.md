@@ -1,13 +1,13 @@
 # Arrays-vs-Linked-Lists-C-Implementation-
-**C99 implementation comparing arrays and linked lists with performance instrumentation**
+**C99 code implementation to compare arrays versus linked lists with performance instrumentation**
 
 ## Overview
 
-This project implements both an array-based structure and a linked list using a consistent interface to explore their differences in behavior and efficiency.
+This project compares two ways of storing data: arrays and linked lists. Both use the same interface and support basic operations like adding, removing, accessing, and looping through data.
 
-Each data structure supports common operations such as insertion, deletion, traversal, and access. A custom memory library is used to track allocations, deallocations, and dereferencing operations, allowing direct comparison of how each structure performs under the same workload.
+A custom memory library tracks memory usage and operations so the performance of each structure can be compared under the same conditions.
 
-The goal of this project is to demonstrate the trade-offs between contiguous memory (arrays) and dynamic node-based structures (linked lists).
+The purpose of the project is to show the differences and trade-offs between arrays, which store data in contiguous memory, and linked lists, which use dynamically connected nodes.
 
 ## Features
 - Custom implementation of: dynamic array structure, singly linked list
@@ -51,20 +51,17 @@ size&emsp;&emsp;&emsp;   malloc&emsp;&emsp;&emsp;   free&emsp;&emsp;&emsp;   der
 (Exact output depends on test cases and operations performed.)
 
 ## What I Learned
-- Key differences between arrays and linked lists:
-- Arrays provide fast indexed access but require shifting elements
-- Linked lists allow efficient insertion/removal but require traversal
-- How memory allocation patterns differ between the two structures
-- How to implement a linked list from scratch using pointers (via an abstracted memory system)
-- How to design consistent APIs across different data structures
-- Building and linking multiple shared libraries in C
-- Using instrumentation to analyze performance behavior beyond Big-O theory
+- The main differences between arrays and linked lists
+- Arrays are faster for direct access, while linked lists are better for insertions and deletions
+- How memory usage differs between the two structures
+- How to build a linked list using pointers
+- How to create consistent APIs for different data structures
 
 ## Challenges & Notes
-- Managing memory correctly using the custom mem library required careful tracking of allocations and frees
-- Debugging linked list pointer logic (especially append and truncate operations) was error-prone
-- Ensuring both implementations followed the exact same interface for fair comparison
-- Understanding how low-level memory operations translate into performance differences
+- Managing memory correctly with the custom memory library
+- Debugging pointer logic in the linked list implementation
+- Keeping both implementations consistent for accurate comparison
+- Understanding how low-level memory operations affect performance
 
 ## Academic Context
 
