@@ -10,11 +10,11 @@ A custom memory library tracks memory usage and operations so the performance of
 The purpose of the project is to show the differences and trade-offs between arrays, which store data in contiguous memory, and linked lists, which use dynamically connected nodes.
 
 ## Features
-- Custom implementation of: dynamic array structure, singly linked list
-- Shared interface for fair comparison of operations
-- Operations supported: Insert (push / append), Delete (pop / truncate), Traverse and access
-- Instrumentation using a memory tracking library (mem)
-- Modular multi-file C design with separate libraries
+- Custom implementations of a dynamic array and singly linked list
+- Shared interface for consistent operation comparison
+- Supports insertion, deletion, traversal, and element access
+- Memory instrumentation using a custom tracking library (`mem`)
+- Modular multi-file C project structure
 
 ## Tech Stack
 Language: C (C99)<br>
@@ -33,16 +33,28 @@ A1/ <br>
 └── README.md<br>
 
 ## Installation & Usage
+
 ### 1. Clone the repository
-git clone https://github.com/rmelocot/Arrays-vs-Linked-Lists-C-Implementation-.git<br>
+```bash
+git clone https://github.com/rmelocot/Arrays-vs-Linked-Lists-C-Implementation-.git
 cd A1
+```
+
 ### 2. Build the project
+```bash
 make
+```
+
 ### 3. Run test program
+```bash
 LD_LIBRARY_PATH=./lib ./bin/test0
+```
+
 ### 4. Clean build files
-make clean      # removes object files<br>
-make cleaner    # removes all generated files
+```bash
+make clean
+make cleaner
+```
 ### Example Output
 size&emsp;&emsp;&emsp;   malloc&emsp;&emsp;&emsp;   free&emsp;&emsp;&emsp;   deref<br>
 ======&emsp; ======&emsp; ======&emsp; ======<br>
@@ -65,8 +77,4 @@ size&emsp;&emsp;&emsp;   malloc&emsp;&emsp;&emsp;   free&emsp;&emsp;&emsp;   der
 
 ## Academic Context
 
-This project was completed as part of a university-level Data Structures and Algorithms course. It has been adapted and documented for portfolio purposes.
-
-## Disclosure
-
-I completed this assignment entirely on my own.
+This project was completed independently as part of a university-level Data Structures and Algorithms course and has been adapted for portfolio purposes.
